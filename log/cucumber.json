@@ -1,0 +1,80 @@
+[
+  {
+    "uri": "features/PokemonSearching.feature",
+    "id": "pokémon-searching",
+    "keyword": "Feature",
+    "name": "Pokémon searching",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "pokémon-searching;search-from-main-page",
+        "keyword": "Scenario",
+        "name": "Search from main page",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2435027924
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the user is on the Pokédex page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/pikachu_searching_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2831199373
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "the user searches for a valid Pokémon name",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/pikachu_searching_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467153248
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "it should display the corresponding Pokémon card",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/pikachu_searching_steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290789484
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12125777
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

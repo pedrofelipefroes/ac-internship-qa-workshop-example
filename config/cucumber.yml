@@ -1,0 +1,4 @@
+default:  --profile pom -t ~@wip -t ~@WIP
+#--no-source --color --format pretty
+pom: --format html --out log/cucumber.html --format pretty --format json  --out log/cucumber.json
+ci: --format html --out log/cucumber.html --format pretty --format json  --out log/cucumber.json --tags ~@wip  --tags ~@WIP
